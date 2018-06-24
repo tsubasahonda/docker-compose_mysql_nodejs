@@ -1,0 +1,9 @@
+version: '2'
+services:
+  jutaku:
+    build: ./db/
+    environment:
+      MYSQL_ROOT_PASSWORD: 'password'
+      MYSQL_DATABASE: 'schema'
+    ports:
+      - "3306:3306"
